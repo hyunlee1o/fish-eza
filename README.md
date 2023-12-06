@@ -1,4 +1,4 @@
-# fish-exa
+# fish-eza
 
 ## ✅ Requirements
 - [Fisher](https://github.com/jorgebucaran/fisher) 4.0+
@@ -8,7 +8,7 @@
 Install using Fisher:
 
 ```console
-fisher install gazorby/fish-exa
+fisher install gazorby/fish-eza
 ```
 
 ## 🔧 Usage
@@ -16,14 +16,14 @@ fisher install gazorby/fish-exa
 ### Base aliases
 | alias            | default options                                                            |
 | ---------------- | -------------------------------------------------------------------------- |
-| `l`              | `exa`                                                                      |
-| `ll`             | `exa --group --header --group-directories-first --long`                    |
-| `ll` in git repo | `exa --group --header --group-directories-first --long --git`              |
-| `lg`             | `exa --group --header --group-directories-first --long --git --git-ignore` |
-| `le`             | `exa --group --header --group-directories-first --long --extended`         |
-| `lt`             | `exa --group --header --group-directories-first --tree --level LEVEL`      |
-| `lc`             | `exa --group --header --group-directories-first --across`                  |
-| `lo`             | `exa --group --header --group-directories-first --oneline`                 |
+| `l`              | `eza`                                                                      |
+| `ll`             | `eza --group --header --group-directories-first --long`                    |
+| `ll` in git repo | `eza --group --header --group-directories-first --long --git`              |
+| `lg`             | `eza --group --header --group-directories-first --long --git --git-ignore` |
+| `le`             | `eza --group --header --group-directories-first --long --extended`         |
+| `lt`             | `eza --group --header --group-directories-first --tree --level LEVEL`      |
+| `lc`             | `eza --group --header --group-directories-first --across`                  |
+| `lo`             | `eza --group --header --group-directories-first --oneline`                 |
 
 ### Extended aliases
 
@@ -81,7 +81,7 @@ To avoid spamming your `config.fish`, you can set environment variables using `s
 `EXA_STANDARD_OPTIONS`
 
 
-default exa options used in all aliases except `l`
+default eza options used in all aliases except `l`
 
 default : `--group --header --group-directories-first`
 
@@ -89,10 +89,10 @@ default : `--group --header --group-directories-first`
 
 You can define per alias options using an env variable named `EXA_<ALIAS>_OPTIONS`.
 
-For example, to customize `ll` specific options, you would store them in `EXA_LL_OPTIONS`
+For ezample, to customize `ll` specific options, you would store them in `EXA_LL_OPTIONS`
 
 Extended suffixes have their env variable as well : `EXA_<SUFFIX>_OPTIONS`.
 
 ## 📝 License
 
-[MIT](https://github.com/Gazorby/fish-exa/blob/master/LICENSE)
+[MIT](https://github.com/Gazorby/fish-eza/blob/master/LICENSE)
